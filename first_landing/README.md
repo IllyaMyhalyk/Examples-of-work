@@ -1,1 +1,2 @@
 I used the SASS preprocessor when writing this landing page. Implemented a navigation page in the form of a pop-up window. I used "grid" technology to place the buttons as well as the gallery elements in the main block of the page. The "footer" block is also implemented using "grid". All other elements of the page are implemented using positioning or technology "flexbox".
+This page is responsive to the given extension.
