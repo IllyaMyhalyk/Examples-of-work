@@ -1,0 +1,16 @@
+.nav {
+  &__content {
+    background-color: #f1f3ce;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 1px solid #f1f3ce;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-bottom: 60px;
+    @include onTablet {
+      height: 40px;
+    }
+  }
+}

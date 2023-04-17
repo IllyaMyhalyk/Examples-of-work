@@ -1,0 +1,223 @@
+.form {
+  padding-top: 30px;
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    color: #f1f3ce;
+    font-weight: 400;
+    margin-bottom: 10px;
+    @include onDesktop {
+      font-size: 32px;
+    }
+  }
+
+  &__container {
+    padding-top: 20px;
+    width: 100%;
+    border-right: 1px solid  #f1f3ce;
+    border-left: 1px solid  #f1f3ce;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;  
+    @include onDesktop {
+      padding-top: 60px;
+    }
+  }
+  &__text {
+    color: #faaf08;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-align: center;
+    @include onDesktop {
+     font-size: 24px;
+    }
+  }
+  &__block {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+    flex-direction: column;
+    @include onDesktop {
+      flex-direction: row;
+    }
+    
+  }
+  &__inputs {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+
+  }
+  &__input {
+    padding-left: 10px;
+    background-color: #080706;
+    width: 220px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    opacity: 0.7;
+    color: #faaf08;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border: 0.5px solid #f1f3ce;
+    &--file-download {
+      border: transparent;
+      font-size: 10px;
+      color: #f1f3ce;
+      @include onMobile {
+        font-size: 12px;
+      }
+      @include onTablet {
+        font-size: 14px;
+      }
+    }
+    @include onMobile {
+      width: 260px;
+    }
+    @include onDesktop {
+      width: 400px;
+    }
+    
+    &::placeholder {
+      width: 100%;
+      height: 100%;
+      color: #f1f3ce;
+      font-weight: 100;
+      font-size: 18px;
+    }
+    &:hover {
+      border-color:  #faaf08;
+    }
+    &:focus {
+      outline: none;
+      border-color: greenyellow;
+    }
+  }
+  &__details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  &__row {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    justify-content: flex-start;
+    @include onDesktop {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;    
+    }
+  }
+  &__ordinal-number {
+    color: #f1f3ce;
+    width: 10px;
+  }
+  &__textarea,
+  &__number {
+    padding-left: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #080706;
+    opacity: 0.7;
+    color: #faaf08;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border: 0.5px solid #f1f3ce;
+    &::placeholder {
+      width: 100%;
+      height: 30px;
+      color: #f1f3ce;
+      font-weight: 100;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &:hover {
+      border-color:  #faaf08;
+    }
+    &:focus {
+      outline: none;
+      border-color: greenyellow;
+    }
+  }
+  &__description {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  &__button {
+    width: 200px;
+    height: 30px;
+    color: #faaf08;
+    background-color: #080706;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: none;
+    opacity: 0.7;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    border-bottom: 0.5px solid #f1f3ce;
+    transition: 0.3s;
+    &:hover {
+      background-color: #faaf08;
+      color: #080706;
+      cursor: pointer;
+    }
+    &:focus {
+      transform: scale(0.9);
+    }
+  }
+  &__control {
+    display: flex;
+    align-items: center;
+    @include onDesktop {
+      margin-left: 12px;
+    }
+  }
+  &__link {
+    outline: none;
+    width: 100px;
+    height: 40px;
+    padding: 0 5px;
+    align-items: center;
+    color: #faaf08;
+    opacity: 0.8;
+    border: 1px solid #f1f3ce ;
+    border-radius: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #080706;
+    transition: 0.3s;
+    cursor: pointer;
+    @include onMobile {
+      width: 130px;
+      height: 30px;
+    }
+    @include onDesktop {
+      width: 150px;
+    }
+    &:hover {
+      border-left: 0.5px solid #faaf08;
+      border-right: 0.5px solid #faaf08;
+    }
+  }
+  &__file-text {
+    text-align: center;
+    color: #faaf08;
+  }
+}
+input:-webkit-autofill {
+  --webkit-text-fill-color: #faaf08;
+  --webkit-box-shadow: 0 0 0 100px #080706 inset;
+}
