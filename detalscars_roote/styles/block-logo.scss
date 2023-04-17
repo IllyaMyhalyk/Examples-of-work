@@ -1,0 +1,75 @@
+.block-logo {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  transition: 0.3s;
+  @include onTablet {
+  }
+  &:hover {
+    transform: scale(1.03);
+  }
+  &__content {
+    margin-top: 10px;
+    padding: 0 10px;
+    border-top: 1px solid #f1f3ce;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 60px;
+    &--footer {
+      border-top: none;
+      border-bottom: #f1f3ce 1px solid;
+      padding-bottom: 30px;
+    }
+    @include onTablet {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+  &__logo {
+    width: 30px;
+    height: 30px;
+    @include onTablet {
+      width: 50px;
+      height: 50px;
+    }
+    @include onDesktop {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__title {
+    width: max-content;
+    display: block;
+    color: #f1f3ce;
+    font-size: 24px;
+    margin-bottom: 20px;
+    @include onTablet {
+      font-size: 35px;
+    }
+    @include onDesktop {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-size: 48px;
+    }
+    
+    &::after {
+      display: block;
+      content: 'Деталі для вашого авто';
+      color: #faaf08;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-size: 10px;
+    }
+  }
+}
