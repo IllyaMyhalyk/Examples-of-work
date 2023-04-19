@@ -1,0 +1,8 @@
+.page {
+  scroll-behavior: smooth;
+  &__body {
+    height: 100vh;
+    background-color: #080706;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+}
