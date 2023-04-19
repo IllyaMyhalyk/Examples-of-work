@@ -1,1 +1,1 @@
-https://illyamyhalyk.github.io/Examples-of-work/first_landing/src/index.html
+https://illyamyhalyk.github.io/Examples-of-work/detalscars_landing_page/src/index.html
