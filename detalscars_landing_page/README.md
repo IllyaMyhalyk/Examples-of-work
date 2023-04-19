@@ -1,1 +1,1 @@
-https://github.com/IllyaMyhalyk/Examples-of-work/tree/master/detalscars_landing_page/index.html
+https://github.com/IllyaMyhalyk/Examples-of-work/detalscars_landing_page/index.html
