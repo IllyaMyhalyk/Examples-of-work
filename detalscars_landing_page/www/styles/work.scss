@@ -1,0 +1,158 @@
+.work {
+  @include onDesktop {
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 120px;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  
+  &__title {
+    color: #faaf08;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 24px;
+    @include onDesktop {
+      font-size: 32px;
+    }
+  }
+
+  &__img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    @include onDesktop {
+      width: 60px;
+      height: 60px;
+    }
+    &--client {
+      background-image: url(../images/work_img/client.png);
+      margin-bottom: 10px;
+    }
+    &--familiar {
+      background-image: url(../images/work_img/familiar.png);
+    }
+    &--vin {
+      background-image: url(../images/work_img/vin.png);
+    }
+    &--libra {
+      background-image: url(../images/work_img/libra.png);
+    }
+    &--kit {
+      background-image: url(../images/work_img/complect.png);
+    }
+    &--delivery {
+      background-image: url(../images/work_img/delivery.png);
+    }
+    &--happy-client {
+      background-image: url(../images/work_img/happy-client.png);
+      margin-bottom: 10px;
+    }
+  }
+  &__tree {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #faaf08 0px 0px 4px 1px;
+    border-radius: 20px;
+  }
+  &__subtitle {
+    font-size: 10px;
+    width: 100px;
+    color: #faaf08;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5px;
+    @include onDesktop {
+      font-size: 16px;
+      width: max-content;
+    }
+  }
+  &__text {
+    color:  #F1F3CE;
+    font-weight: 400;
+    padding-left: 10px;
+  }
+  &__line {
+    position: relative;
+    width: 1px;
+    height: 70px;
+    background-color: #F1F3CE;
+    &--last {
+      margin-bottom: 10px;
+    }
+    &--right {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: #F1F3CE;
+        bottom: 0;
+        @include onTablet {
+          width: 150px;
+        }
+        @include onDesktop {
+          width: 200px;
+        }
+      }
+    }
+    &--left {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: #F1F3CE;
+        bottom: 0;
+        transform: translateX(-100%);
+        @include onTablet {
+          width: 150px;
+        }
+        @include onDesktop {
+          width: 200px;
+        }
+      }
+    }
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &--right {
+      transform: translate(90px, 22px);
+      @include onTablet {
+       transform: translate(180px, 20px);
+      }
+      @include onDesktop {
+       transform: translate(240px, 15px);
+      }
+      &-price {
+        transform: translate(90px, 10px);
+        @include onTablet {
+          transform: translate(180px, 10px);
+         }
+         @include onDesktop {
+          transform: translate(240px, 15px);
+         }
+      }
+    }
+    &--left {
+      transform: translate(-90px, 22px);
+      @include onTablet {
+        transform: translate(-180px, 20px);
+       }
+      @include onDesktop {
+        transform: translate(-240px, 15px);
+       }
+    }
+  }
+}

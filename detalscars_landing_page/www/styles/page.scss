@@ -1,0 +1,10 @@
+.page {
+  scroll-behavior: smooth;
+  background-image: url(../images/page-bcgrd/Fotoram1.io.png);
+  background-size: contain;
+  background-attachment: fixed;
+  &__body {
+    height: 100vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+}

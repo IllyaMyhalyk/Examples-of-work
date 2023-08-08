@@ -1,0 +1,94 @@
+.about-us { 
+  margin-bottom: 20px;
+  font-size: 12px;
+  display: block;
+  @include onTablet {
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 100px;
+    transition: 0.3s;
+    @include onDesktop {
+      font-size: 16px;
+      margin-bottom: 200px;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+  
+  &__container {
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid  #f1f3ce;
+    border-left: 1px solid  #f1f3ce;
+    @include onTablet {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  &__content {
+    @include onDesktop {
+      padding-left: 15px;
+    }
+  }
+
+  &__title {
+    color: #f1f3ce;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    @include onDesktop {
+      font-size: 34px;
+    }
+  }
+
+  &__content,
+  &__content-second-block,
+  &__content-third-block {
+    font-weight: 100;
+    width: 230px;
+    color: #f1f3ce;
+    text-align: start;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 16px;
+    @include onMobile {
+      width: 270px;
+    }
+    @include onDesktop {
+      width: 320px;
+      font-size: 16px;
+    }
+  }
+  &__content-second-block {
+    @include onTablet {
+      transform: translateY(20%);
+      padding-left: 10px;
+    }
+    @include onDesktop {
+      padding-left: 20px;
+    }
+  }
+  &__content-third-block {
+    @include onTablet {
+      transform: translateY(40%);
+      padding-left: 10px;
+    }
+  }
+  &__subtitle {
+    color: #faaf08;
+    font-size: 18px;
+    @include onDesktop {
+      font-size: 21px;
+    }
+  }
+  &__list {
+    padding-left: 15px;
+  }
+}

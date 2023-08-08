@@ -1,0 +1,38 @@
+a.phone__order {
+  position: fixed!important;
+  bottom: 85px;
+  right: 0;
+  transition: .4s;
+  z-index: 6;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  @include onTablet {
+    right: 15px;
+  }
+}
+a.phone__order svg {
+  width: 70px;
+  height: 70px;
+  background: #080706;
+  -webkit-animation-name: "play_down";
+  -moz-animation-name: "play_up";
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+}
+a.phone__order svg g {
+  fill: #F57C00;
+}
+
+@-webkit-keyframes play_down {
+  0% {
+      box-shadow: 0 0 #F57C00;
+  }
+
+  to {
+      box-shadow: 0 0 0 25px rgba(45,44,44,0)
+  }
+}
